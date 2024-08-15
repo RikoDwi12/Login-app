@@ -8,8 +8,12 @@ import {
   UnstyledButton,
 } from "@mantine/core";
 import useAuth from "@modules/Auth/hooks/useAuth";
-import { ExitIcon } from "@radix-ui/react-icons";
+// import { ExitIcon } from "@radix-ui/react-icons";
+// eslint-disable-next-line import/no-extraneous-dependencies
+import LogoutIcon from "@mui/icons-material/Logout";
 import { useRouter } from "next/navigation";
+// eslint-disable-next-line import/no-extraneous-dependencies, prettier/prettier
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 interface Props {
   setOpened: (opened: boolean) => void;
@@ -53,7 +57,8 @@ export default function Head({ setOpened, opened }: Props) {
             <Menu.Label>
               <span className="text-inactive text-sm">{Auth.user?.email}</span>
             </Menu.Label>
-            <Menu.Item icon={<ExitIcon />} onClick={onLogout}>
+            <Menu.Item icon={<AccountCircleIcon />}>Profil</Menu.Item>
+            <Menu.Item icon={<LogoutIcon />} onClick={onLogout}>
               Logout
             </Menu.Item>
           </Menu.Dropdown>

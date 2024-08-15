@@ -17,7 +17,7 @@ interface Props {
 export default function Nav({ opened }: Props) {
   const Menus: IMenu[] = [
     {
-      name: "ini list KATEGORI",
+      name: "LIST 1",
       icon: <TokensIcon />,
       link: "/category",
       subMenus: [
@@ -32,7 +32,7 @@ export default function Nav({ opened }: Props) {
       ],
     },
     {
-      name: "Article",
+      name: "LIST 2",
       icon: <FileTextIcon />,
       link: "/article",
       subMenus: [
@@ -47,7 +47,7 @@ export default function Nav({ opened }: Props) {
       ],
     },
     {
-      name: "NewsLetter",
+      name: "List 3",
       link: "/newsletter",
       icon: <EnvelopeClosedIcon />,
       subMenus: [
@@ -62,7 +62,7 @@ export default function Nav({ opened }: Props) {
       ],
     },
     {
-      name: "Product",
+      name: "List 4",
       link: "/product",
       icon: <MagicWandIcon />,
     },

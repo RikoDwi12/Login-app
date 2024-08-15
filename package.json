@@ -21,14 +21,16 @@
     "deploy_dev": "service/.\\deploy_dev.sh"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
+    "@emotion/react": "^11.13.0",
     "@emotion/server": "^11.11.0",
+    "@emotion/styled": "^11.13.0",
     "@mantine/core": "^6.0.14",
     "@mantine/dropzone": "^6.0.15",
     "@mantine/hooks": "^6.0.14",
     "@mantine/next": "^6.0.14",
     "@mantine/notifications": "^6.0.14",
     "@mantine/tiptap": "^6.0.15",
+    "@mui/icons-material": "^5.16.7",
     "@radix-ui/react-icons": "^1.3.0",
     "@tabler/icons": "^2.23.0",
     "@tabler/icons-react": "^2.23.0",
